@@ -1,0 +1,56 @@
+
+.contact-container {
+    font-family: "array-mono", serif;
+    margin: 100px auto;
+    letter-spacing: 2px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    font-family: "array-mono", serif;
+}
+
+.contact-title {
+    font-size: clamp(40px, 8vw, 80px);
+    text-align: center;
+}
+
+.horaire p, .address p{
+    font-size: clamp(12px, 2vw, 14px);
+    margin-bottom: 10px;
+}
+
+.contact-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-photo {
+    width: clamp(40%, 60%, 80%);
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 40px;
+    margin: 50px auto;
+}
+
+
+@media screen and (max-width: 768px) {  
+    .contact-infos {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact-photo {
+        overflow: hidden;
+        border-radius: 40px;
+        margin: 20px auto;
+        width: 100%;
+    }
+}

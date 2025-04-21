@@ -1,0 +1,33 @@
+span {
+    font-family: 'numb';
+}
+
+nav, .btn {
+    font-family: "array-mono", serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.btn {
+    letter-spacing: 2px;
+    padding-inline: 2rem;
+    border-radius: 20px;
+}
+
+.nav-link {
+    font-size: 13px;
+    margin-inline: 10px;
+}
+
+@media screen and (max-width: 991px) {  
+    form.d-flex {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
